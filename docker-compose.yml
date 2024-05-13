@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  app:
+    image: docker-pusher
+    container_name: pushernildo
+    working_dir: /application
+    environment:
+      - DEBUG=false
+    volumes:
+      - ./:/application
+      - /home/marcos/Desktop/Freelances/upix/volumes:/volumes

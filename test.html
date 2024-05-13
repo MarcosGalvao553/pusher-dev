@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <title>Pusher Test</title>
+  <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+  <script>
+    Pusher.logToConsole = true;
+
+    var pusher = new Pusher('f458c5448697a0e1a749', {
+      cluster: 'sa1'
+    });
+
+    var channel = pusher.subscribe('my-channel');
+    channel.bind('my-event', function(data) {
+      alert(JSON.stringify(data));
+    });
+  </script>
+</head>
+<body>
+  <h1>Pusher Test</h1>
+  <p>
+    testonildo da silva borges
+  </p>
+</body>

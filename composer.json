@@ -1,0 +1,18 @@
+{
+    "name": "vendor/pusher",
+    "autoload": {
+        "psr-4": {
+            "Pusher\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Galvao",
+            "email": "marcosgalvao050503@gmail.com"
+        }
+    ],
+    "require": {
+        "pusher/pusher-push-notifications": "^1.0",
+        "pusher/pusher-php-server": "7.2.4"
+    }
+}
